@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+body{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.logo{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.menu{
+    height: 8%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #fff;
+}
+.menu2{
+    height: 8%;
+    width: 100vw;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+}
+.menu-items > * {
+    margin: 5px 5px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.menu-items > *:hover{
+    scale: 1.1;
+}
+
+.menu2-items{
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+    position: relative;
+}
+.menu2-items > * {
+    cursor: pointer;
+    margin: 5px 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+}
+.menu2-items>*:hover{
+    border-bottom: 3px solid #AF0E4E;
+}
+.logot{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.input{
+    width: 360px;
+    height: 35px;
+    padding-left: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    opacity: 1;
+}
+
+.btn{
+    background-color: black;
+    border:none;
+    height: 35px;
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #AF0E4E;
+}
+
+.divList{
+    font-size: 13px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10px;
+}
+.divList > *{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.divList > *:hover{
+    opacity: 0.7;
+}
+
+.promo{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #AF0E4E 0% 0% no-repeat padding-box;
+    height: 50px;
+    letter-spacing: -0.13px;
+    color: #FFFFFF;
+} 
+.promoText{
+    padding-right: 1.5rem;
+}   
+.shopNow{
+    text-decoration: underline;
+    letter-spacing: -0.13px;
+    color: #FFFFFF;
+}
+.sec{
+    background-color: grey;
+}
+
+.principal{
+    height: 60vh;
+    margin: 0 12em;
+    margin-top: 1em;
+    min-width: 350px;
+}
+.bigCont{
+    margin-top: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    height: 70%;
+}
+.cardCont{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+}
+.card{
+    width: 230px;
+    min-width: 200px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #BCBCBC;
+}
+.footer{
+    color: #FFFFFF;
+    display: flex;
+    background-color: #AF0E4E;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    min-width: 320px;
+    margin: 0 12em;
+}
+.model{
+    padding-left: 1.2vw;
+    font-size: 30px;
+}
+.contLast{
+    margin-top: 1em;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.lastList{
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #555555;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+.lastList > *{
+    margin-right: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+.lastList > *:hover{
+    text-decoration: underline;
+}
+.content > *{
+    margin-left: 5px;
+}
+.cardBtn{
+    margin-left: 8%;
+    width: 85%;
+    height: 40px;
+    background-color: #0d5c91;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    transition: all .3s ease-in;
+}
+.cardBtn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.upCards{
+    width: 77%;
+    height: 45px;
+    height: 8%;
+    margin-top: 5px;
+    display: flex;
+    margin-left: 20%;
+    justify-self: end;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 14px;
+
+}
+.sp{
+    margin-left: 20%;
+    font-size: 14px;    
+}
+.select{
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #BCBCBC;
+    color: #545454; 
+    font-size: 16px;
+    width: 20%;
+}
+.aside{
+    width: 300px;
+    min-width: 240;
+    min-height: 172px;
+}
+.filters{
+    margin-top: 5%;
+    margin-left: 8%;
+    min-width: 240;
+    min-height: 172px;
+    display: grid;
+    grid-template-columns:repeat(2,36px); 
+}
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+}
+.filText{
+    font-size: 14px;
+    
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgCard{
+    width: 189px;
+    min-width: 180px;
+    height: 135px;  
+}
+.promote{
+    background: #AF0200 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
+    width: 70%;
+    height: 30px;
+    margin: 8px;
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+.promot{
+    background: transparent 0% 0% no-repeat padding-box;
+    color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
+    width: 70%;
+    height: 30px;
+    margin: 8px;
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+
+.listPrice{
+    list-style: none;
+    font-size: 14px;
+}
+@media screen and (max-width: 600px){
+    .principal{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+        min-width: 100%;
+    }
+    .bigCont{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardCont{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        padding: 10px 0;
+    }
+    .footer{
+        margin: 0;
+    }
+}
