@@ -117,6 +117,9 @@ body{
 .divList > *:hover{
     opacity: 0.7;
 }
+.divList>*:active{
+    color: #0d5c91;
+}
 
 .promo{
     margin-top: 1rem;
@@ -137,38 +140,35 @@ body{
     text-decoration: underline;
     letter-spacing: -0.13px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .sec{
     background-color: grey;
 }
 
 .principal{
-    height: 100%;
     margin: 0 10em;
     margin-top: 1em;
-    max-width: 1200px;
+    max-width: 100%;
     min-width: 350px;
-    /* background-color: violet; */
 }
 .bigCont{
     margin-top: 5px;
     display: flex;
     justify-self: center;
     align-self: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 70%;
-    width: 100%;
-    /* background-color: greenyellow; */
 }
 .cardCont{
-    /* background-color: red; */
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    /* flex-direction: column; */
     min-width: 320px;
-    min-height: 380px;
+    min-height: 380px;  
+    width: 100%;
 }
 .card{
+
     width: 230px;
     min-width: 200px;
     height: 350px;
@@ -258,7 +258,9 @@ body{
     border: 1px solid #BCBCBC;
     color: #545454; 
     font-size: 16px;
-    width: 20%;
+    width: 25%;
+    height: 30px;
+    background-color: #FFFFFF;
 }
 .aside{
     width: 300px;
@@ -323,7 +325,27 @@ body{
     list-style: none;
     font-size: 14px;
 }
-@media (max-width: 600px){
+.see{
+    margin-left: 8%;
+    color: #0D5C91;
+    cursor: pointer;
+}
+.see:hover{
+    text-decoration: underline;
+}
+.toggle{
+    display: none;
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+.seil{
+    color: #E02020;
+}
+@media screen and (max-width: 600px){
     .body{
         max-width: 400px;
     }
@@ -335,7 +357,6 @@ body{
         display: flex;
     }
     .principal{
-        /* background-color: yellowgreen; */
         margin: 0;
         height: 100%;
         width: 350px;
@@ -353,21 +374,25 @@ body{
         height: 100%;
         justify-content: center;
         align-items: center;
+
     }
     .card{
         padding: 10px 0;
     }
     .footer{
         margin: 0;
+        padding-top: 15px;
     }
     .aside{
         display: none;
     }
     .match{
-        color: transparent;
+        display: none;
     }
     .select{
-        width: 150px;
+        margin-left: 3%;
+        width: 200px;
+        height: 25px;
     }
     .contLast{
         display: none;
@@ -379,7 +404,138 @@ body{
         margin-left: 10%;
         width: 300px;
     }
+}
+
+@media screen and (max-width: 750px){
+    .logot{
+        margin-left: 15%;
+    }
     .saleList{
+        width: 100%;
+        left: 0;
+        top: 47.5px;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+    }
+    .toggle{
+        position: absolute;
+        display: flex;
+        width: 50px;
+        left: 0;
+        top: 6%;
+        cursor: pointer;
+    }
+    .divList{
+        flex-direction: column;
+        position: fixed;
+        background-color:rgba(255, 255, 255, .95);
+        color: #34c6df;
+        font-size: 18px;
+        padding: 10px 0 10px 10px;
+        border-bottom: 3px solid #34c6df;
+        width: 100%;
+        left: 100%;
+        transition: left .3s;
+    }
+    .divListVisible{
+        left: 0;
+    }
+    .divList > *{
+        margin-bottom: 3px;
+        line-height: 40px;
+    }
+    .seil{
+        color: black;
+        font-weight: bold;
+    }
+    .promoText{
+        font-size: 14px;
+        padding-right: 20px;
+    }
+    .shopNow{
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1024px){
+    .contLast{
         display: none;
+    }
+    .principal{
+        align-self: center;
+        justify-self: center;
+        width: 700px;
+        margin: 0 auto;
+    }
+    .aside{
+        width: 200px;
+    }
+    .cardCont{
+        flex-wrap: wrap;
+    }
+    .saleList{
+        width: 100%;
+        left: 0;
+        top: 47.5px;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+    }
+    .listPrice{
+        font-size: 10px;
+    }
+    .listPrice > *{
+        margin-bottom: 15%;
+    }
+    .toggle{
+        position: fixed;
+        display: flex;
+        width: 50px;
+        left: 90%;
+        top: 5%;
+        cursor: pointer;
+    }
+    .divList{
+        flex-direction: column;
+        position: fixed;
+        background-color:rgba(255, 255, 255, .95);
+        color: #34c6df;
+        font-size: 18px;
+        padding: 10px 0 10px 10px;
+        border-bottom: 3px solid #34c6df;
+        width: 100%;
+        left: 100%;
+        transition: left .3s;
+    }
+    .divListVisible{
+        left: 0;
+    }
+    .divList > *{
+        margin-bottom: 3px;
+        line-height: 40px;
+    }
+    .menu2{
+        width: 700px;
+    }
+    .menu2-items{
+        font-size: 14px;
+        flex-wrap: wrap;       
+    }
+    .logot{
+        display: flex;
+        width: 250px;
+    }
+    .input{
+        font-size: 11px;
+    }
+    .btn{
+        width: 35%
+    }
+    .select{    
+        width: 200px;
+        height: 25px;
+    }
+    .footer{
+        width: 700px;
+        margin: 0 auto;
     }
 }
