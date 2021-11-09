@@ -6,3 +6,7 @@ For the Landing page I was allowed to use only HTML and pure CSS. I also add som
 
 
 ![Landing](https://github.com/JaviFrey1/LenovoChallg/blob/main/LandingPage/resources/presentation.png "Landing Page")
+
+## Step by step
+
+You just need to clone this repo in your PC, then open the folder and double-click the index.html
