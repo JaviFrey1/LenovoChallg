@@ -5,4 +5,4 @@ This is a challenge where using a mock up as a reference I've to create a Landin
 For the Landing page I was allowed to use only HTML and pure CSS. I also add some dynamism with JavaScript. Enjoy!
 
 
-![Landing](/resources/pres.png "Landing Page")
+![Landing](C:\Users\javie\OneDrive\Escritorio\LenovoChallg\LandingPage\resources\pres.png "Landing Page")
